@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/anhcon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Cầu Nguyện Online | HPU2 Chạm</title>
+</head>
+<body>
+    <div class="container">
+        <div class="line-1">
+            <img src="images/hoabenphai.gif" class="images">
+            <img src="images/gocbentrai.gif">
+            <img src="images/hoabentrai.gif" class="images-1">
+            <img src="images/gocbenphaiduoi.gif" class="images-2">
+            <img src="images/goctrengiua.gif" class="images-3">
+            <img src="images/hieuunghoatuyetroi.gif" class="images-3">
+            <img src="images/denlong.png" class="images-4">
+            <img src="images/dammay.gif" class="images-5">
+            <img src="images/hpu2.png" class="images-6">
+        </div>
+    </div>
+    <div class="line-2"></div>
+    <div class="main">
+        <input type="text" id="fullname" placeholder="Full Name" required="">
+        <textarea id="message" placeholder="Cầu Nguyện Tại Đây"></textarea>
+        <img src="images/hinhnamgiua.gif">
+        <a href="https://www.facebook.com/HPU2cham" class="text">©HPU2 Chạm</a>
+    </div>
+    <button onclick="SendMail()" class="btn">Cầu Nguyện</button>
+    <div class="form hide">
+            <div class="form-notification">
+                <div class="xmark">
+            <i class="fa-solid fa-xmark"></i>
+            <h3 class="text">Cầu Nguyện Thành Công</h3>
+            <p class="text-1">Vạn sự khởi đầu nan, gian nan đừng có nản.<br>Chúc bạn luôn may mắn và bình an!</p>
+            <a href="https://www.facebook.com/HPU2cham" class="btn-1">Like Page</a>
+            <a href="https://www.facebook.com/HPU2cham" class="btn-2">Follow Page</a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init('952hmPcH1wyM_d55i');
+        })();
+    </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
