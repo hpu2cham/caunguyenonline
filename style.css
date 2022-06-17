@@ -142,6 +142,19 @@ textarea{
     flex-direction: column;
     z-index: 102;
     transition: ease .30s;
+    animation: form 7s ease 0s 1 normal forwards;
+}
+@keyframes form {
+	0%,
+	50%,
+	100% {
+		opacity: 1;
+	}
+
+	25%,
+	75% {
+		opacity: 0;
+	}
 }
 .form-notification{
     height: 210px;
@@ -395,9 +408,12 @@ textarea{
 @media only screen and (max-width: 900px){
     .container {
         position: relative;
-        height: 100vh;
+        height: 120vh;
         width: 100%;
         background: rgb(220, 113, 113);
+    }
+    .line-2{
+        height: 120vh;
     }
     .container .images{
         position: absolute;
@@ -495,3 +511,83 @@ textarea{
         left: 75%;
     }
 }
+@media only screen and (max-width: 400px){
+    .container {
+        position: relative;
+        height: 150vh;
+        width: 144%;
+    }
+    .line-2{
+        display: none;
+    }
+    .container img{
+        position: absolute;
+        top: 50%;
+    }
+    .container .images-2{
+        position: absolute;
+        top: 37%;
+        left: 48%;
+    }
+    .container .images-1{
+        position: absolute;
+        top: 0%;
+        left: 4%;
+    }
+    .container .images-6{
+        position: absolute;
+        top: 4%;
+        left: 20%;
+    }
+    input[type=text]{
+        position: absolute;
+        width: 180px;
+        top: 73%;
+        left: 54%;
+        padding: 6px;
+        display: inline-block;
+        border: #fff;
+        border-radius: 5px;
+      }
+    textarea{
+        position: absolute;
+        top: 80%;
+        height: 70px;
+        left: 34%;
+        padding: 5px;
+        margin: 5px;
+        width: 300px;
+        border-radius: 10px;
+    }
+    .main .text{
+        position: absolute;
+        top: 96%;
+        left: 300px;
+    }
+    .main img{
+        position: absolute;
+        top: 85%;
+        left: 55%;
+    }
+    .btn{
+        position: absolute;
+        left: 58%;
+        top: 110%;
+    }
+    .form-notification .btn-1{
+        position: absolute;
+        top: 56%;
+        left: 28%;
+    }
+    .form-notification .btn-2{
+        position: absolute;
+        top: 56%;
+        left: 57%;
+    }
+    .form-notification i{
+        position: absolute;
+        top: 39%;
+        left: 84%;
+    }
+}
+
