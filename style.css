@@ -142,19 +142,6 @@ textarea{
     flex-direction: column;
     z-index: 102;
     transition: ease .30s;
-    animation: form 7s ease 0s 1 normal forwards;
-}
-@keyframes form {
-	0%,
-	50%,
-	100% {
-		opacity: 1;
-	}
-
-	25%,
-	75% {
-		opacity: 0;
-	}
 }
 .form-notification{
     height: 210px;
